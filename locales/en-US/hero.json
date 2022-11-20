@@ -1,0 +1,20 @@
+{
+    "position": "Software Engineer",
+    "greeting1": "helloThere.tsx",
+    "greeting2": "welcome.cs",
+    "greeting3": "enjoyYourVisit.tsx",
+    "aboutMenu": "About",
+    "experienceMenu": "Experience",
+    "skillsMenu": "Skills",
+    "projectsMenu": "Projects",
+    "blogMenu": "Blog",
+
+    "neonShadow1": "shadow-red-500",
+    "neonBorder1": "border-red-700",
+
+    "neonShadow2": "shadow-red-500",
+    "neonBorder2": "border-red-700",
+
+    "neonShadow3": "shadow-red-500",
+    "neonBorder3": "border-red-700"
+}

@@ -1,0 +1,17 @@
+{
+    "position": "Engenheiro de software",
+    "greeting1": "ola.tsx",
+    "greeting2": "bemVindo.cs",
+    "greeting3": "aproveiteSuaVisita.tsx",
+    "aboutMenu": "Sobre",
+    "experienceMenu": "Experiencias",
+    "skillsMenu": "Habilidades",
+    "projectsMenu": "Projetos",
+    "blogMenu": "Blog",
+    "neonShadow1": "shadow-[#1b1462]",
+    "neonBorder1": "border-[#ffffff]",
+    "neonShadow2": "shadow-[#ffffff]",
+    "neonBorder2": "border-[#ffffff]",
+    "neonShadow3": "shadow-[#b30409]",
+    "neonBorder3": "border-[#b30409]"
+}

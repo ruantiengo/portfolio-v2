@@ -3,25 +3,25 @@ type LinkType = {
     link: string
 }
 
-export const menuLink: LinkType[] = [
+export const menuLink: (t: any) => LinkType[] = (t: any) => [
     {
         link: "#about",
-        text: "About"
+        text: t("hero:aboutMenu")
     },
     {
         link: "#experience",
-        text: "Experience"
+        text: t("hero:experienceMenu")
     },
     {
         link: "#skills",
-        text: "Skills"
+        text: t("hero:skillsMenu")
     },
     {
         link: "#projects",
-        text: "Projects"
+        text: t("hero:projectsMenu")
     },
     {
         link: "/blog",
-        text: "Blog"
+        text: t("hero:blogMenu")
     }
 ]
