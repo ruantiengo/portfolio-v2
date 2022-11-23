@@ -7,23 +7,21 @@ import {
   CheckIcon,
   ChevronRightIcon,
 } from "@radix-ui/react-icons";
-import { getLanguageFlag } from "../../data/getLanguageFlag";
+import { getLanguageFlag } from "../../helpers/getLanguageFlag";
 import { useRouter } from "next/router";
-import { getLanguageName } from "../../data/getLanguageNames";
+import { getLanguageName } from "../../helpers/getLanguageNames";
 import useTranslation from 'next-translate/useTranslation'
 import Link from "next/link";
 
 const LanguageButton = () => {
-  const [bookmarksChecked] = useState(true);
   const { t } = useTranslation()
-  const [isClicked, setIsClicked] = useState(true);
-  const [person, setPerson] = useState("pedro");
+  const [isClicked] = useState(true);
   const router = useRouter();
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
         <button
-          className="bg-transparent w-20 h-7 rounded-full mx-auto object-center flex items-center justify-center opacity-60 hover:opacity-100 transition duration-200"
+          className="bg-transparent w-20 h-7 rounded-full mx-auto object-center flex items-center justify-center opacity-60 hover:opacity-100 transition duration-200 z-30"
           aria-label="Customise options"
         >
           <img
@@ -50,8 +48,9 @@ const LanguageButton = () => {
       <DropdownMenu.Portal>
         <DropdownMenu.Content className="DropdownMenuContent" sideOffset={5}>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
-            {router.locales?.map(locale => (
+            {router.locales?.map((locale, i) => (
                 <DropdownMenu.CheckboxItem
+                key={i}
                 className="DropdownMenuCheckboxItem"
                 checked={locale === router.locale}
                 >

@@ -9,7 +9,9 @@
        cursor-pointer hover:border-solid hover:border-[#f7ab0a]/40 hover:text-[#f7ab0a] z-20 font-bold
     }
 }
-
+body{
+  scroll-behavior:smooth
+}
 .DropdownMenuContent,
 .DropdownMenuSubContent {
   min-width: 220px;
@@ -175,13 +177,17 @@
   }
 }
 
-@keyframes neon {
-  from {
-    filter: drop-shadow(0 0 0 gray));
+@keyframes bounceX {
+  0%, 100% {
+      transform: translateX(-25%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
-  to {
-    filter: drop-shadow(0 0 20px gray);
+  50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
-
+.animate-bounceX {
+  animation: bounceX 3s infinite;
+  animation-delay: 2500;
+}

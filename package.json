@@ -17,15 +17,18 @@
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
     "framer-motion": "^7.6.7",
+    "lodash": "^4.17.21",
     "next": "13.0.4",
     "next-translate": "^1.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
+    "sass": "^1.56.1",
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.189",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "tailwind-scrollbar": "^2.0.1",

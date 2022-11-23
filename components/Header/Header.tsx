@@ -7,7 +7,7 @@ type Props = {};
 
 const Header: React.FC<Props> = ({}) => {
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-20 items-center px-6">
       <motion.div
         initial={{
           x: -500,
@@ -22,7 +22,7 @@ const Header: React.FC<Props> = ({}) => {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center"
+        className="flex flex-row items-center justify-center "
       >
         <SocialIcon
           url="https://www.youtube.com/channel/UCEWae4eZkVsba0rB7ndHg7A"
@@ -64,9 +64,9 @@ const Header: React.FC<Props> = ({}) => {
         }}
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
-        <div className="z-200">
+        
         <LanguageButton/>
-        </div>
+        
         
       </motion.div>
     </header>

@@ -1,12 +1,17 @@
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import { menuLink } from "../../data/menuList";
 import useTranslation from 'next-translate/useTranslation'
+import { scrollSmooth } from "../../helpers/scroolSmooth";
+import Computer from "./Computer";
+
+
 
 const Hero = () => {
   let { t } = useTranslation()
+  const menuElement = useRef(null)
   
   const [text] = useTypewriter({
     words: [t('hero:greeting1'),t('hero:greeting2'),t('hero:greeting3')],
@@ -14,8 +19,11 @@ const Hero = () => {
     delaySpeed: 2000,
   });
 
+
+
+
   return (
-    <div className="h-screen flex flex-col space-y-2 justify-center items-center text-center overflow-hidden z-20">
+    <div className="h-screen flex flex-col space-y-2 justify-center items-center text-center overflow-hidden z-20 relative">
       <BackgroundCircles />
       <img
         src="/profile.jpg"
@@ -34,12 +42,16 @@ const Hero = () => {
         {menuLink(t).map((menu, i) => {
           return (
               <button className="heroButton" key={i}>
-                 <Link href={menu.link} className="w-[100%] h-[100%]">
+                 <Link href={menu.link} className="w-[100%] h-[100%]" onClick={(e) => scrollSmooth(e,menu.link)}>
                     {menu.text}
                   </Link>
                 </button>
           );
         })}
+
+      </div>
+      <div className="hidden md:block">
+        <Computer/>
       </div>
     </div>
   );

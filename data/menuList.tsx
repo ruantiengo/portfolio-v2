@@ -16,10 +16,10 @@ export const menuLink: (t: any) => LinkType[] = (t: any) => [
         link: "#skills",
         text: t("hero:skillsMenu")
     },
-    {
-        link: "#projects",
-        text: t("hero:projectsMenu")
-    },
+    // {
+    //     link: "#projects",
+    //     text: t("hero:projectsMenu")
+    // },
     {
         link: "/blog",
         text: t("hero:blogMenu")
