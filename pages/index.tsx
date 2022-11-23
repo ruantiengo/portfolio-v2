@@ -25,6 +25,7 @@ const Home: NextPage = () => {
     handleEndScroll();
   };
   
+  const appConfig = AppConfig();
   return (
     <div 
     onScroll={handleScroll}
@@ -35,7 +36,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Ruan Tiengo</title>
       </Head>
-      <DefaultSeo {...AppConfig()}/>
+      <DefaultSeo {...appConfig}/>
       {/**
        * HEADER
        * HERO

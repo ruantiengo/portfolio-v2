@@ -10,7 +10,6 @@ const About = () => {
     const birthDate = new Date(2000,6,7);
     let age = today.getFullYear() - birthDate.getFullYear();
     const m = today.getMonth() - birthDate.getMonth();
-    console.log(age.toString());
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
       age--;
     }   

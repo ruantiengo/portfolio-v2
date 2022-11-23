@@ -2,6 +2,6 @@
     "defaultLocale": "en-US",
     "locales": ["pt-BR", "en-US", "it-IT"],
     "pages": {
-        "*": ["hero", "header", "about", "experiences", "skills"]
+        "*": ["hero", "header", "about", "experiences", "skills", "meta"]
     }
   }
