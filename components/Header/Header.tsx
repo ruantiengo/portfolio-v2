@@ -7,7 +7,7 @@ type Props = {};
 
 const Header: React.FC<Props> = ({}) => {
   return (
-    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-20 items-center px-6 relative">
+    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-20 items-center px-6">
       <motion.div
         initial={{
           x: -500,
@@ -36,7 +36,7 @@ const Header: React.FC<Props> = ({}) => {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.youtube.com/channel/UCEWae4eZkVsba0rB7ndHg7A"
+          url="https://www.linkedin.com/in/ruan-tiengo"
           fgColor="gray"
           network="linkedin"
           bgColor="transparent"

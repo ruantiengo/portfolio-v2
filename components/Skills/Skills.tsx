@@ -21,7 +21,7 @@ const Skills = (props: Props) => {
         <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5'>
             {
               skillsList.map((skill, i) => (
-                <Skill skill={skill} key={i}/>
+                <Skill skill={skill} key={i} directionLefft={i % 2 == 0}/>
               ))
             }
         </div>
