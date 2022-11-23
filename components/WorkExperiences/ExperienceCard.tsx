@@ -9,8 +9,8 @@ function ExperienceCard({aboutMe, companyName, img}: Props) {
   const { t } = useTranslation()
   return (
     <article className='flex flex-col rounded-l items-center space-y-7 flex-shrink-0
-    w-[95%] sm:w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40
-    cursor-pointer transition-opacity duration-200 overflow-hidden '>
+    sm:w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40
+    cursor-pointer transition-opacity duration-200 overflow-hidden min-w-[300px] '>
         <motion.img 
         initial={{
           y: -100,
@@ -22,9 +22,9 @@ function ExperienceCard({aboutMe, companyName, img}: Props) {
         src={img.src} alt={img.alt}
         className='w-20 h-20 rounded-full md:rounded-full  object-cover object-center'/>
 
-        <div className='px-0 md:px-10 '>
-            <h4 className='text-3xl font-light'>{aboutMe.role}</h4>
-            <p className='font-bold text-2xl my-2'>
+        <div className='px-0 md:px-10 max-w-[90%]'>
+            <h4 className='text-2xl sm:text-3xl font-light'>{aboutMe.role}</h4>
+            <p className='font-bold text-xl sm:text-2xl my-2'>
               {companyName}
             </p>
             <div className='flex space-x-2 my-2'>
