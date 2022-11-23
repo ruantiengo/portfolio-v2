@@ -4,6 +4,7 @@ import Head from "next/head";
 import { AppConfig } from "./AppConfig"
 
 const Meta = () => {
+  const appConfig = AppConfig()
   return (
     <>
       <Head>
@@ -15,14 +16,14 @@ const Meta = () => {
         />
       </Head>
       <NextSeo
-        title={AppConfig.title}
-        description={AppConfig.description}
-        canonical={AppConfig.canonical}
+        title={appConfig.title}
+        description={appConfig.description}
+        canonical={appConfig.canonical}
         openGraph={{
-          title: AppConfig.title,
-          description: AppConfig.description,
-          url: AppConfig.canonical,
-          site_name: AppConfig.site_name,
+          title: appConfig.title,
+          description: appConfig.description,
+          url: appConfig.canonical,
+          site_name: appConfig.site_name,
         }}
       />
     </>

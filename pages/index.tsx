@@ -35,7 +35,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Ruan Tiengo</title>
       </Head>
-      <DefaultSeo {...AppConfig}/>
+      <DefaultSeo {...AppConfig()}/>
       {/**
        * HEADER
        * HERO
