@@ -10,6 +10,8 @@ import Skills from "../components/Skills/Skills";
 import WorkExperiences from "../components/WorkExperiences/WorkExperiences";
 import _ from 'lodash'
 import { scrollSmooth } from "../helpers/scroolSmooth";
+import { DefaultSeo } from "next-seo";
+import { AppConfig } from "../helpers/AppConfig";
 const Home: NextPage = () => {
   const [isScrolling, setIsScrolling] = useState(false)
   const handleEndScroll = useMemo(
@@ -31,8 +33,9 @@ const Home: NextPage = () => {
      min-w-[320px] min-h-screen h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-x-hidden
      scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#f7ab0a]/70">
       <Head>
-        <title>Ruan Tiengo Portfolio</title>
+        <title>Ruan Tiengo</title>
       </Head>
+      <DefaultSeo {...AppConfig}/>
       {/**
        * HEADER
        * HERO
@@ -64,7 +67,7 @@ const Home: NextPage = () => {
         <footer className="fixed top-24 right-0 md:right-56 w-full cursor-pointer animate-bounce z-20">
           <div className="flex items-center justify-center">
             <img className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-            src="profile.jpg">
+            src="profile.jpg" alt="image to start section">
             </img>
           </div>
           <span className="flex items-center justify-center">TOP</span>

@@ -28,6 +28,7 @@ const Hero = () => {
       <img
         src="/profile.jpg"
         className="relative rounded-full h-32 w-32 mx-auto object-cover z-20"
+        alt="Ruan Tiengo picture"
       ></img>
 
       <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[11px] z-20">

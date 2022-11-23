@@ -12,6 +12,11 @@
 body{
   html, body {margin: 0; height: 100%; overflow: hidden}
 }
+.hiddenHeight{
+  @media (max-height: 768px){
+    display: none;
+  }
+}
 .DropdownMenuContent,
 .DropdownMenuSubContent {
   min-width: 220px;

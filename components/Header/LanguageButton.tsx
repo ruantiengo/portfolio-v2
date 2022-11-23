@@ -27,6 +27,7 @@ const LanguageButton = () => {
           <img
             className="w-7 h-7 rounded-full mx-auto object-cover"
             src={getLanguageFlag(router.locale)}
+            alt={router.locale}
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
