@@ -21,7 +21,7 @@ export const cardListExperience: (t: any) => CardExperienceType[] = (t: any) => 
         
         companyName: "DTI",
         aboutMe:{
-            responsabilities: [t('experiences:activity1-dti'),t('experiences:activity2-dti'),t('experiences:activity3-dti'),t('experiences:activity4-dti'),t('experiences:activity5-dti')],
+            responsabilities: [t('experiences:activity1-dti'),t('experiences:activity2-dti'),t('experiences:activity3-dti')],
             dateStart: "08/2022",
             dateEnd: "-",
             tecs: ["react", "csharp","azure", "flutter"],
