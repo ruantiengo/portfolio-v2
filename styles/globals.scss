@@ -10,7 +10,7 @@
     }
 }
 body{
-  scroll-behavior:smooth
+  html, body {margin: 0; height: 100%; overflow: hidden}
 }
 .DropdownMenuContent,
 .DropdownMenuSubContent {

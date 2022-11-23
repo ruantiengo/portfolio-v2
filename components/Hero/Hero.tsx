@@ -23,17 +23,17 @@ const Hero = () => {
 
 
   return (
-    <div className="h-screen flex flex-col space-y-2 justify-center items-center text-center overflow-hidden z-0 relative">
+    <div className="h-screen flex flex-col space-y-2 justify-center items-center text-center overflow-hidden z-20 relative">
       <BackgroundCircles />
       <img
         src="/profile.jpg"
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        className="relative rounded-full h-32 w-32 mx-auto object-cover z-20"
       ></img>
 
-      <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[11px] ">
+      <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[11px] z-20">
         {t('hero:position')}
       </h2>
-      <h1 className="text-2xl lg:text-4xl">
+      <h1 className="text-2xl lg:text-4xl z-20">
         <span>{text}</span>
         <Cursor cursorColor="#F7ABBA" />
       </h1>

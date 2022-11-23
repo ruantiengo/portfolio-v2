@@ -5,7 +5,7 @@ type Props = {}
 
 function Computer({}: Props) {
   return (
-    <div className='absolute bottom-0 left-56 w-96'>
+    <div className='absolute bottom-0 left-56 w-96 z-0'>
         <div>
             <div className='flex'>
                 <div className='flex flex-col justify-between align-items'>
