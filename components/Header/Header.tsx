@@ -30,7 +30,7 @@ const Header: React.FC<Props> = ({}) => {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.youtube.com/channel/UCEWae4eZkVsba0rB7ndHg7A"
+          url="https://twitter.com/ruancoding"
           fgColor="gray"
           network="twitter"
           bgColor="transparent"
@@ -42,7 +42,7 @@ const Header: React.FC<Props> = ({}) => {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.youtube.com/channel/UCEWae4eZkVsba0rB7ndHg7A"
+          url="https://www.instagram.com/tiengoruan/"
           fgColor="gray"
           network="instagram"
           bgColor="transparent"

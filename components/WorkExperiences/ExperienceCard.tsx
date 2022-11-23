@@ -38,9 +38,9 @@ function ExperienceCard({aboutMe, companyName, img}: Props) {
             </div>
             <p className='py-5 text-gray-300'>{t("experiences:startWork")}: {aboutMe.dateStart} - {t("experiences:endWork")}: {aboutMe.dateEnd}</p>
             <ul className='list-disc space-y-4 ml-5 text-sm'>
-              <li>Summary</li>
-              <li>Summary</li>
-              <li>Summary</li>
+              {aboutMe.responsabilities.map((ac,i) => (
+                <li key={i}>{ac}</li>
+              ))}
             </ul>
         </div>
     </article>

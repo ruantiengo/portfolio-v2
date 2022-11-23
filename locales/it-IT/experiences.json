@@ -1,5 +1,17 @@
 {
     "role": "sviluppatore di software",
     "startWork": "Ha iniato in",
-    "endWork": "Ha finito in"
+    "endWork": "Ha finito in",
+    "activity1-dti": "Creazione di funzionalità per applicazioni di reazione e correzione di bug",
+    "activity2-dti": "Creazione e manutenzione di API utilizzando .NET",
+    "activity3-dti": "Sviluppo di un'app di grandi dimensioni utilizzando flutter",
+    "activity4-dti": "Utilizza gli strumenti Azure Devops",
+    "activity5-dti": "Metodologia agile",
+
+    "activity1-wattio": "Creazione dall'inizio di landing pages utilizando react",
+    "activity2-wattio": "Sviluppo di funzionalità utilizzando Python",
+    "activity3-wattio": "Sviluppo di piccole funzionalità di un'app flutter",
+    "activity1-meuguru": "Sviluppo del nodo dell'API",
+    "activity2-meuguru": "Tutorial per principianti",
+    "activity3-meuguru": "Aiutare gli studenti del primo anno a fare i compiti"
 }

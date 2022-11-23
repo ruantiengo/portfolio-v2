@@ -1,5 +1,19 @@
 {
     "role": "software developer",
     "startWork": "Started",
-    "endWork": "Ended"
+    "endWork": "Ended",
+
+    "activity1-dti" : "Creating features for react applications and fixing bugs",
+     "activity2-dti" : "Creating and maintaining APIs using .NET",
+     "activity3-dti" : "Developing a large app using flutter",
+     "activity4-dti" : "Use Azure Devops Tools",
+     "activity5-dti" : "Agile methodology",
+
+     "activity1-wattio" : "Creating landing pages using react from scratch",
+     "activity2-wattio" : "Feature development using python",
+     "activity3-wattio" : "Development of small features of a flutter app",
+
+     "activity1-meuguru" : "Development of API's node",
+     "activity2-meuguru" : "Tutorial for beginners",
+     "activity3-meuguru" : "Helping first-year students with their homework"
 }

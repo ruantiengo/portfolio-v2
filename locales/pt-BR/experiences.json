@@ -1,5 +1,19 @@
 {
     "role": "Desenvolvedor de software",
     "startWork": "Inicio",
-    "endWork": "Fim"
+    "endWork": "Fim",
+    "activity1-dti" : "Criação de features para aplicações react e bugs fixing",
+    "activity2-dti" : "Criação e manutenção de APIs usando .NET",
+    "activity3-dti" : "Desenvolvimento de um grande app usando flutter",
+    "activity4-dti" : "Utilizar ferramentas de Devops da azure",
+    "activity5-dti" : "Métodologia ágil",
+
+    "activity1-wattio" : "Criação de landing pages do absoluto 0 utilizando react",
+    "activity2-wattio" : "Desenvolvimento de features utilizando python",
+    "activity3-wattio" : "Desenvolvimento de pequenas features de um app flutter",
+
+    "activity1-meuguru" : "Desenvolvimento de API's node",
+    "activity2-meuguru" : "Tutoria para iniciantes",
+    "activity3-meuguru" : "Ajudando estudantes do primeiro periodo com suas tarefas escolares"
+
 }
