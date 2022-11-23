@@ -28,7 +28,7 @@ const Skill = ({directionLefft, skill}: Props) => {
                 <p className='text-3xl font-bold text-black opacity-100'>{skill.percentage}</p>
             </div>
         </div>
-        <span className={`${isHovering ? '' : 'hidden'} absolute top-0 left-[30%] rounded-md color-black opacity-1 group-hover:bg-black p-2 flex items-center justify-center  `}>{skill.img.alt}</span>
+        <span className={`${isHovering ? '' : 'hidden'} absolute top-[-20px] sm:top-[-10px]  left-[30%] rounded-md color-black opacity-1 group-hover:bg-black p-2 flex items-center justify-center  `}>{skill.img.alt}</span>
     </div>
   )
 }
