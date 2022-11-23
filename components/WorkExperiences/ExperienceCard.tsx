@@ -8,7 +8,7 @@ type Props = CardExperienceType
 function ExperienceCard({aboutMe, companyName, img}: Props) {
   const { t } = useTranslation()
   return (
-    <article className='flex flex-col rounded-l items-center space-y-4 sm:flex-shrink-0
+    <article className='flex flex-col rounded-l items-center space-y-4 flex-shrink-0
     sm:w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40
     cursor-pointer transition-opacity duration-200 overflow-hidden min-w-[300px] '>
         <motion.img 
