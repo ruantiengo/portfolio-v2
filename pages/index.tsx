@@ -61,7 +61,7 @@ const Home: NextPage = () => {
 
    
        {isScrolling ? ( <Link href={"#hero"} onClick={e => scrollSmooth(e,"#hero")}>
-        <footer className="fixed top-12 right-0 md:right-56 w-full cursor-pointer animate-bounce z-20">
+        <footer className="fixed top-24 right-0 md:right-56 w-full cursor-pointer animate-bounce z-20">
           <div className="flex items-center justify-center">
             <img className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
             src="profile.jpg">

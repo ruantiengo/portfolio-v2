@@ -7,7 +7,7 @@ type Props = {};
 
 const Header: React.FC<Props> = ({}) => {
   return (
-    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-20 items-center px-6">
+    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-20 items-center px-6 relative">
       <motion.div
         initial={{
           x: -500,

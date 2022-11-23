@@ -23,7 +23,7 @@ const Hero = () => {
 
 
   return (
-    <div className="h-screen flex flex-col space-y-2 justify-center items-center text-center overflow-hidden z-20 relative">
+    <div className="h-screen flex flex-col space-y-2 justify-center items-center text-center overflow-hidden z-0 relative">
       <BackgroundCircles />
       <img
         src="/profile.jpg"

@@ -21,7 +21,7 @@ const LanguageButton = () => {
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
         <button
-          className="bg-transparent w-20 h-7 rounded-full mx-auto object-center flex items-center justify-center opacity-60 hover:opacity-100 transition duration-200 z-30"
+          className="absolute bg-transparent w-20 h-7 rounded-full mx-auto object-center flex items-center justify-center opacity-60 hover:opacity-100 transition duration-200 z-9990"
           aria-label="Customise options"
         >
           <img

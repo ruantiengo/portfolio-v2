@@ -22,7 +22,7 @@ export const cardListExperience: (t: any) => CardExperienceType[] = (t: any) => 
         companyName: "DTI",
         aboutMe:{
             responsabilities: [],
-            dateStart: "2022",
+            dateStart: "08/2022",
             dateEnd: "-",
             tecs: ["react", "csharp","azure", "flutter"],
             role: t("experiences:role"),
@@ -34,12 +34,12 @@ export const cardListExperience: (t: any) => CardExperienceType[] = (t: any) => 
             src: "companies/wattio.jfif",
             alt: "Wattio"
         },
-        companyName: "Meu Guru",
+        companyName: "Wattio",
         aboutMe:{
             role: t("experiences:role"),
             responsabilities: [],
-            dateStart: "2021",
-            dateEnd: "2022",
+            dateStart: "11/2021",
+            dateEnd: "07/2022",
             tecs: ["react", "python"],
         }
     },
@@ -50,9 +50,9 @@ export const cardListExperience: (t: any) => CardExperienceType[] = (t: any) => 
         },
         aboutMe:{
             role: t("experiences:role"),
-            dateStart: "2019",
+            dateStart: "01/2019",
             tecs: ["java", "c","ts", "python"],
-            dateEnd: "2021",
+            dateEnd: "12/2021",
             responsabilities: [],
         },
         companyName: "Meu Guru"
