@@ -20,7 +20,7 @@ function ExperienceCard({aboutMe, companyName, img}: Props) {
         whileInView={{opacity: 1, y: 0}}
         viewport={{once: true}}
         src={img.src} alt={img.alt}
-        className='w-20 h-20 rounded-full md:rounded-full  object-cover object-center'/>
+        className='w-20 h-20 rounded-full md:rounded-full  object-cover object-center hidden sm:block'/>
 
         <div className='px-0 md:px-10 max-w-[90%]'>
             <h4 className='text-2xl sm:text-3xl font-light'>{aboutMe.role}</h4>
