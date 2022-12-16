@@ -13,6 +13,8 @@ import { getLanguageName } from "../../helpers/getLanguageNames";
 import useTranslation from 'next-translate/useTranslation'
 import Link from "next/link";
 
+'use client';
+
 const LanguageButton = () => {
   const { t } = useTranslation()
   const [isClicked] = useState(true);

@@ -12,6 +12,8 @@ import _ from 'lodash'
 import { scrollSmooth } from "../helpers/scroolSmooth";
 import { DefaultSeo } from "next-seo";
 import { AppConfig } from "../helpers/AppConfig";
+
+'use client'
 const Home: NextPage = () => {
   const [isScrolling, setIsScrolling] = useState(false)
   const handleEndScroll = useMemo(
