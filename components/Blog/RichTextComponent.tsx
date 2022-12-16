@@ -1,32 +1,65 @@
-
+import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowUturnLeftIcon } from '@heroicons/react/24/solid';
-import { NavbarProps } from 'sanity';
+import urlFor from '../../lib/urlFor';
 
-const StudioNavbar = (props: NavbarProps) => {
-  return (
-    <div>
-      <div className='flex items-center justify-between p-5'>
-        <Link href='/' className='text-accent flex items-center'>
-          <ArrowUturnLeftIcon className='h-6 w-6 text-accent mr-2' />
-          Przejdź do strony głównej
-        </Link>
-
-        <div className='hidden md:flex p-5 rounded-lg justify-center border-2 border-accent'>
-          <h1 className='font-bold text-white'>
-            Pamiętaj o zasadach tworzeniu bloga zamieszczonych
-          </h1>
-          <Link
-            href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            className='text-accent font-bold ml-2 underline'
-          >
-            tutaj
-          </Link>
+export const RichTextComponents = {
+  types: {
+    image: ({ value }: any) => {
+      return (
+        <div className='relative w-full h-96 m-10 mx-auto'>
+          <Image
+            className='object-contain'
+            src={urlFor(value).url()}
+            alt='Blog post image'
+            fill
+          />
         </div>
-      </div>
-      <>{props.renderDefault(props)}</>
-    </div>
-  );
-};
+      );
+    },
+  },
+  list: {
+    bullet: ({ children }: any) => (
+      <ul className='ml-10 py-5 list-disc space-y-5'>{children}</ul>
+    ),
+    number: ({ children }: any) => (
+      <ol className='mt-10 list-decimal'>{children}</ol>
+    ),
+  },
+  block: {
+    h1: ({ children }: any) => (
+      <h1 className='text-5xl py-10 font-bold'>{children}</h1>
+    ),
+    h2: ({ children }: any) => (
+      <h2 className='text-4xl py-10 font-bold'>{children}</h2>
+    ),
+    h3: ({ children }: any) => (
+      <h3 className='text-3xl py-10 font-bold'>{children}</h3>
+    ),
+    h4: ({ children }: any) => (
+      <h4 className='text-2xl py-10 font-bold'>{children}</h4>
+    ),
 
-export default StudioNavbar;
+    blockquote: ({ children }: any) => (
+      <blockquote className='border-l-accent border-l-4 pl-5 py-5 my-5'>
+        {children}
+      </blockquote>
+    ),
+  },
+  marks: {
+    link: ({ children, value }: any) => {
+      const rel = !value.href.startsWith('/')
+        ? 'noreferrer noopener'
+        : undefined;
+
+      return (
+        <Link
+          href={value.href}
+          rel={rel}
+          className='underline decoration-accent hover:decoration-black'
+        >
+          {children}
+        </Link>
+      );
+    },
+  },
+};

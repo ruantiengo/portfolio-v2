@@ -7,7 +7,7 @@ const Header = () => {
       <div className='flex items-center space-x-2'>
         <Link href='/'>
           <Image
-            src='https://i.imgur.com/1XO6OSo.jpg'
+            src='/profile.jpg'
             className='rounded-full object-fill'
             alt='Logo'
             width={50}

@@ -7,6 +7,7 @@ import PreviewSuspense from '../../../components/Blog/PreviewSuspense';
 import PreviewBlogList from '../../../components/Blog/PreviewBlogList';
 import BlogList from '../../../components/Blog/BlogList';
 
+
 const query = groq`
   *[_type=='post'] { //all the post data
     ...,            // all the fields

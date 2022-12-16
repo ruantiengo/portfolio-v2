@@ -12,7 +12,7 @@ export default function RootLayout({
       <head />
       <body className='font-inter max-w-7xl mx-auto'>
         <Header />
-        <Banner />
+        <Banner/>
 
         <>{children}</>
       </body>

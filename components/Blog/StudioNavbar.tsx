@@ -7,21 +7,16 @@ const StudioNavbar = (props: NavbarProps) => {
   return (
     <div>
       <div className='flex items-center justify-between p-5'>
-        <Link href='/' className='text-accent flex items-center'>
+        <Link href='/blog' className='text-accent flex items-center'>
           <ArrowUturnLeftIcon className='h-6 w-6 text-accent mr-2' />
-          Przejdź do strony głównej
+          Go to the home page
         </Link>
 
         <div className='hidden md:flex p-5 rounded-lg justify-center border-2 border-accent'>
           <h1 className='font-bold text-white'>
-            Pamiętaj o zasadach tworzeniu bloga zamieszczonych
+            Remember about the rules of creating a blog posted
           </h1>
-          <Link
-            href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            className='text-accent font-bold ml-2 underline'
-          >
-            tutaj
-          </Link>
+       
         </div>
       </div>
       <>{props.renderDefault(props)}</>
