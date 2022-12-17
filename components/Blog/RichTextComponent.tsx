@@ -44,6 +44,13 @@ export const RichTextComponents = {
         {children}
       </blockquote>
     ),
+
+    code: ({children}: any) => (
+      <div className='bg-slate-600 p-5'>
+        {children}
+      </div>
+    )
+    
   },
   marks: {
     link: ({ children, value }: any) => {
