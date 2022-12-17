@@ -44,9 +44,10 @@ const Post = async ({ params: { slug } }: Props) => {
 
   return (
     <>
+      <head>
           <title>${post.title} | Ruan Tiengo - blog</title>
-        <meta name='description'>{post.description}</meta>
-    
+          <meta name='description'>{post.description}</meta>
+        </head>
       <article className='px-10 pb-28'>
         <section className='space-y-2 border border-accent text-white'>
           <div className='relative min-h-56 flex flex-col md:flex-row justify-between'>
