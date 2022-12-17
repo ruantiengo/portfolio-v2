@@ -86,9 +86,7 @@ const Post = async ({ params: { slug } }: Props) => {
             <div>
               <h2 className='italic pt-10'>{post.description}</h2>
               <div className='flex items-center justify-end mt-auto space-x-2'>
-                
                   <p
-                    key={post.category._id}
                     className='bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-semibold mt-4'
                   >
                     {post.category.title}
