@@ -12,7 +12,7 @@ const Banner = () => {
        
   
         <p className='mt-5 md:mt-2 text-gray-400 max-w-lg text-center italic'>
-          "{filosyPhrases[randomIndex].quote}"
+          {`"`}{filosyPhrases[randomIndex].quote}{`"`}
         </p>
         <span className="text-center max-w-lg text-sm">
           {filosyPhrases[randomIndex].author}
