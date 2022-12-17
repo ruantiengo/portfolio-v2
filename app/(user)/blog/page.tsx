@@ -12,7 +12,7 @@ const query = groq`
   *[_type=='post'] { //all the post data
     ...,            // all the fields
     author->,       //author reference with {}
-    categories[]-> // categories reference with []
+    category-> // categories reference with []
 } | order(_createdAt desc) // ordering by descending
 `;
 
@@ -35,7 +35,7 @@ async function HomePage() {
 
   const posts = await client.fetch(query);
   console.log(posts);
-
+  
   return (
     <div className=''>
       <BlogList posts={posts} />

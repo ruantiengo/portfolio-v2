@@ -3,6 +3,8 @@ import Image from "next/image";
 import urlFor from '../../lib/urlFor';
 import ClientSideRoute from './ClientSideRoute';
 
+
+
 type Props = {
     posts: Post[]; //"/typings.d.ts"-d Post type-iig zaasan bga.
   };
@@ -10,8 +12,9 @@ type Props = {
   const BlogList = ({ posts }: Props) => {
     return (
         <div>
+       
         <hr className='border-accent mb-10' />
-  
+
         <div className='grid grid-cols-1 md:grid-cols-2 px-10 gap-x-10 gap-y-16 pb-24'>
           {posts.map((post) => (
             <ClientSideRoute key={post._id} route={`/blog/post/${post.slug.current}`}>
@@ -27,7 +30,7 @@ type Props = {
                     <div>
                       <p className='font-bold'>{post.title}</p>
                       <p>
-                        {new Date(post._createdAt).toLocaleDateString('pl-PL', {
+                        {new Date(post._createdAt).toLocaleDateString('pt-BR', {
                           day: 'numeric',
                           month: 'long',
                           year: 'numeric',
@@ -36,14 +39,14 @@ type Props = {
                     </div>
   
                     <div className='flex flex-col md:flex-row gap-y-2 md:gap-x-2 items-center'>
-                      {post.categories.map((c) => (
+                      
                         <div
-                          key={c._id}
+                          key={post.category._id}
                           className='bg-accent text-center text-black px-3 py-1 rounded-full text-sm font-semibold'
                         >
-                          <p>{c.title}</p>
+                          <p>{post.category.title}</p>
                         </div>
-                      ))}
+                     
                     </div>
                   </div>
                 </div>
